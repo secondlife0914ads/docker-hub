@@ -8,7 +8,7 @@ on:
     branches:
       - main
 env:
-  DOCKER_REPOSITORY: gwchoi/docker-repo
+  DOCKER_REPOSITORY: secondlife0914ads/docker-repo
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
@@ -36,7 +36,7 @@ jobs:
     - name: Repository checkout
       uses: actions/checkout@v2
       with:
-        repository: gwchoi/argocd-kube
+        repository: secondlife0914ads/argocd-kube
         token: ${{ secrets.MY_GITHUB_TOKEN }}
 
     - name: Add date and push
